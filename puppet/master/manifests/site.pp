@@ -52,13 +52,4 @@ node 'agent.domarques.com.br' inherits default {
     mode   => 644,
   }
 
-  file { 'puppet.md' :
-    path   => '/home/domarques/puppet.md',
-    content => "Este sistema é controlado pelo puppet!",
-    ensure => present,
-    owner  => domarques,
-    group  => domarques,
-    mode   => 644,
-  }
-
 }
